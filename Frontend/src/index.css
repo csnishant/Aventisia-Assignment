@@ -3,6 +3,9 @@
 
 
 :root {
+
+  --color-primary: #4F46E5;
+  --color-secondary: #1E1B4B;
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -61,35 +64,11 @@ body {
 }
 
 #root {
-width: 100%;
+  width: 100%;
   min-height: 100vh;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
 
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
 p {
   margin: 0;
 }

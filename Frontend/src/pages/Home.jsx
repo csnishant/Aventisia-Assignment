@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
 import Card from "../components/Card";
-import Modals from "../components/Modals";
+
 import Button from "../components/Button";
 import { Search } from "lucide-react";
+import TopSection from "../components/TopSection";
 
 const Home = () => {
   // ✅ state inside component
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const cards = Array(6).fill({
     title: "Test",
@@ -29,32 +29,9 @@ const Home = () => {
         {/* Main Content */}
         <main className="flex-1 overflow-y-auto p-8">
           {/* Top Section */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
-            <h1 className="text-2xl font-bold text-gray-400">
-              Knowledge Base
-            </h1>
-
-            <div className="flex items-center gap-3">
-              {/* Search */}
-              <div className="relative">
-                <Search
-                  className="absolute left-3 top-2.5 text-slate-400"
-                  size={16}
-                />
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  className="pl-10 pr-4 py-2 border border-slate-200 rounded-lg text-sm w-64 bg-white focus:ring-2 focus:ring-indigo-500 outline-none"
-                />
-              </div>
-
-              {/* Create Button */}
-              <Button
-                label="Create New"
-                onClick={() => setIsDrawerOpen(true)}
-              />
-            </div>
-          </div>
+          <TopSection
+           
+          />
 
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -109,8 +86,7 @@ const Home = () => {
         </main>
       </div>
 
-      {/* Drawer */}
-      <Modals isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
+  
     </div>
   );
 };
