@@ -29,9 +29,7 @@ const Home = () => {
         {/* Main Content */}
         <main className="flex-1 overflow-y-auto p-8">
           {/* Top Section */}
-          <TopSection
-           
-          />
+          <TopSection />
 
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -46,37 +44,42 @@ const Home = () => {
           </div>
 
           {/* Footer */}
-          <footer className="mt-12 py-4 flex justify-between items-center text-sm text-slate-500 border-t border-slate-200">
-            <div>6 rows</div>
+          <footer className="mt-12 py-4 flex justify-between items-center text-sm border-t border-slate-200">
+            {/* Left */}
+            <div className="font-semibold text-secondary">6 rows</div>
 
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2">
+            {/* Right Section */}
+            <div className="flex items-center gap-6">
+              {/* Rows per page */}
+              <div className="flex items-center gap-2 font-semibold text-secondary">
                 <span>Rows per page</span>
-                <select className="border border-slate-200 rounded px-2 py-1 bg-white">
+                <select className="border border-slate-200 rounded-md px-2 py-1 bg-white text-secondary focus:outline-none">
                   <option>10</option>
                 </select>
               </div>
 
-              <div>page 1 of 1</div>
+              {/* Page Info */}
+              <div className="font-semibold text-secondary">Page 1 of 1</div>
 
-              <div className="flex space-x-1">
+              {/* Pagination Buttons */}
+              <div className="flex gap-2">
                 <button
-                  className="p-1 border rounded disabled:opacity-30"
+                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30"
                   disabled>
                   «
                 </button>
                 <button
-                  className="p-1 border rounded disabled:opacity-30"
+                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30"
                   disabled>
                   ‹
                 </button>
                 <button
-                  className="p-1 border rounded disabled:opacity-30"
+                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30"
                   disabled>
                   ›
                 </button>
                 <button
-                  className="p-1 border rounded disabled:opacity-30"
+                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30"
                   disabled>
                   »
                 </button>
@@ -85,8 +88,6 @@ const Home = () => {
           </footer>
         </main>
       </div>
-
-  
     </div>
   );
 };
