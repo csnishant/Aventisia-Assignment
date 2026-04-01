@@ -42,44 +42,49 @@ const Home = () => {
               />
             ))}
           </div>
+          <footer className="mt-12 py-6 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+            {/* Left Section: Mobile pe center, Desktop pe left */}
+            <div className="font-semibold text-secondary order-2 md:order-1">
+              6 rows
+            </div>
 
-          {/* Footer */}
-          <footer className="mt-12 py-4 flex justify-between items-center text-sm border-t border-slate-200">
-            {/* Left */}
-            <div className="font-semibold text-secondary">6 rows</div>
+            {/* Right Section: Saare controls ko mobile pe wrap karne ke liye */}
+            <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-6 order-1 md:order-2 w-full md:w-auto">
+              {/* Rows per page & Page Info Group */}
+              <div className="flex items-center gap-4">
+                {/* Rows per page */}
+                <div className="flex items-center gap-2 font-semibold text-secondary">
+                  <span className="whitespace-nowrap">Rows per page</span>
+                  <select className="border border-slate-200 rounded-md px-2 py-1 bg-white text-secondary focus:outline-none cursor-pointer">
+                    <option>10</option>
+                  </select>
+                </div>
 
-            {/* Right Section */}
-            <div className="flex items-center gap-6">
-              {/* Rows per page */}
-              <div className="flex items-center gap-2 font-semibold text-secondary">
-                <span>Rows per page</span>
-                <select className="border border-slate-200 rounded-md px-2 py-1 bg-white text-secondary focus:outline-none">
-                  <option>10</option>
-                </select>
+                {/* Page Info */}
+                <div className="font-semibold text-secondary whitespace-nowrap">
+                  Page 1 of 1
+                </div>
               </div>
 
-              {/* Page Info */}
-              <div className="font-semibold text-secondary">Page 1 of 1</div>
-
-              {/* Pagination Buttons */}
+              {/* Pagination Buttons - Mobile pe centered */}
               <div className="flex gap-2">
                 <button
-                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30"
+                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30 hover:bg-slate-50 transition-colors"
                   disabled>
                   «
                 </button>
                 <button
-                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30"
+                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30 hover:bg-slate-50 transition-colors"
                   disabled>
                   ‹
                 </button>
                 <button
-                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30"
+                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30 hover:bg-slate-50 transition-colors"
                   disabled>
                   ›
                 </button>
                 <button
-                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30"
+                  className="w-8 h-8 flex items-center justify-center border border-slate-200 rounded-md text-secondary font-semibold disabled:opacity-30 hover:bg-slate-50 transition-colors"
                   disabled>
                   »
                 </button>
