@@ -18,12 +18,16 @@ The assignment focuses on:
 The application consists of two main screens:
 
 ### 🔹 Screen 1: Knowledge Base Home
+<img width="1865" height="945" alt="image" src="https://github.com/user-attachments/assets/8f747389-1448-440e-b9b5-6ab9248c7fd9" />
+
 
 * Displays a list of knowledge base cards
 * Includes search functionality
 * Clean layout with proper spacing & alignment
 
 ### 🔹 Screen 2: Create New Drawer / Modal
+<img width="1901" height="897" alt="image" src="https://github.com/user-attachments/assets/e04a0d04-c3b1-44b0-8ff4-1b0fe32d5bf8" />
+
 
 * Opens on clicking **“Create New”**
 * Slide-in drawer UI with overlay
