@@ -18,7 +18,8 @@ The assignment focuses on:
 The application consists of two main screens:
 
 ### 🔹 Screen 1: Knowledge Base Home
-<img width="1865" height="945" alt="image" src="https://github.com/user-attachments/assets/8f747389-1448-440e-b9b5-6ab9248c7fd9" />
+<img width="1875" height="920" alt="image" src="https://github.com/user-attachments/assets/ca736c33-00f0-4d08-9dc6-0dfa8a829556" />
+
 
 
 * Displays a list of knowledge base cards
